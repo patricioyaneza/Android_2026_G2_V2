@@ -34,6 +34,8 @@ public class Principal {
 		float numeroDecimal = 3.14159265f;
 		
 		System.out.println("El valor de pi es: " + numeroDecimal);
+		
+		// tarea: investigar los tipos de datos en Java
 	}
 	
 }
