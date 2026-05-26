@@ -10,6 +10,14 @@ public class Principal {
 		boolean expresion2 = (10*10) <= Math.pow(10, 2) ;// (10*10);
 		System.out.println("El resultado de la expresión 2 es: " + expresion2);
 		
+		int a = 5;
+		int b = 50;
+		System.out.println("El valor de a " + (a++));
+		System.out.println("El valor de a " + a);
+		
+
+		System.out.println("El valor de b " + (++b));
+		System.out.println("El valor de b " + b);
 		
 	}
 
