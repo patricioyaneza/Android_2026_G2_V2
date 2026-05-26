@@ -39,7 +39,7 @@ public class Principal {
 		int numeroPequeno = 1234567890123456789;
 		long numeroGrande = 1234567890123456789L;
 */
-		
+ 
 		float valor = 3.123f;
 		boolean valor2 = true;
 		// tarea: investigar los tipos de datos en Java
