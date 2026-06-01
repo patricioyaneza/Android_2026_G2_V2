@@ -12,7 +12,8 @@ public class Principal {
 		*/
 		
 		Scanner leerTeclado = new Scanner(System.in);
-	
+
+		
 		System.out.println("| ***** Calculadora G2 ***** |");
 		
 		System.out.print("Ingrese el primer numero: ");
