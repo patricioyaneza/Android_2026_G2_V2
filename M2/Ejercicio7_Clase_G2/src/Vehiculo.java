@@ -32,7 +32,7 @@ public class Vehiculo {
 		this.tieneAireAcondicionado = tieneAireAcondicionado;
 	}
 	
-	// 3. Getters y Setters  Mutadores y Accesores
+	// 3. Getters y Setters  Accesores y Mutadores
 	public String getPatente() {
 		return patente;
 	}
