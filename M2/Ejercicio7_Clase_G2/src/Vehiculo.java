@@ -74,6 +74,14 @@ public class Vehiculo {
 	}
 	
 	// 4. Metodos Personalizados o customer
-		
+	public void mostrarDatos()
+	{
+		System.out.println("***** Datos del Vehiculo *****");
+		System.out.println("Patente				: " + patente);
+		System.out.println("Marca				: " + marca);
+		System.out.println("Modelo				: " + modelo);
+		System.out.println("Año				: " + anio);
+		System.out.println("Tiene Aire Acondicionado	: " + tieneAireAcondicionado);
+	}
 	
-}
+} // llave de cierre de la clase Vehiculo

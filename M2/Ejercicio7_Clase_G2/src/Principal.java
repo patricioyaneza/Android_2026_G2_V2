@@ -29,6 +29,25 @@ public class Principal {
 		System.out.println("Año: " + v1.getAnio());
 		System.out.println("Tiene Aire Acondicionado: " + v1.isTieneAireAcondicionado());
 		
+		// crear un nuevo vehiculo utilizando el constructor con parametros
+		Vehiculo v2 = new Vehiculo("XYZ789", "Honda", "Civic", 2019, true);
+		
+		System.out.println("***** Vehiculo 2 *****");
+		System.out.println("Patente: " + v2.getPatente());
+		// Ejercicio 2: mostrar los datos de los atributos del vehiculo v2 
+		System.out.println("Marca: " + v2.getMarca());
+		System.out.println("Modelo: " + v2.getModelo());
+		System.out.println("Año: " + v2.getAnio());
+		System.out.println("Tiene Aire Acondicionado: " + v2.isTieneAireAcondicionado());
+		// modificar la patente del vehiculo v2
+		v2.setPatente("XYZ900");
+		System.out.println("Patente: " + v2.getPatente());
+		
+		System.out.println("");
+		System.out.println("");
+		v1.mostrarDatos();
+		v2.mostrarDatos();
+		
 		
 	}
 
