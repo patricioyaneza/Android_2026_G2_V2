@@ -76,7 +76,7 @@ public class Vehiculo {
 	// 4. Metodos Personalizados o customer
 	public void mostrarDatos()
 	{
-		System.out.println("***** Datos del Vehiculo *****");
+		System.out.println("***** Datos del Vehículo *****");
 		System.out.println("Patente				: " + patente);
 		System.out.println("Marca				: " + marca);
 		System.out.println("Modelo				: " + modelo);

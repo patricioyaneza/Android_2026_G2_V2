@@ -14,6 +14,7 @@ public class Principal {
 		// modificar la patente del vehiculo v1
 		v1.setPatente("ABCD12");
 		
+		
 		System.out.println("Patente: " + v1.getPatente());
 		// Ejercicio 1: asignar valores a los demas atributos 
 		
