@@ -50,5 +50,9 @@ public class Cuenta {
 		System.out.println("Saldo			: " + saldo);
 	}
 	
+	// girar dinero
 	
+	// depositar dinero	
+	
+	// resumen de transacciones o  estado de cuenta
 }
