@@ -4,7 +4,7 @@ public class Cuenta {
 	private int numeroCuenta;
 	private String titular;
 	private double saldo;
-	
+
 	// 2- Constructores
 	public Cuenta() {
 		this.numeroCuenta = 0;

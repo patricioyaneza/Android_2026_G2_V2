@@ -8,6 +8,7 @@ public class Principal {
 		Billetera1.mostrarInformacion();
 		
 		
+		
 		// Ejercicio 1: Crear otra billetera usado el constructor sin parámetros,
 		// entregar datos(set) y mostrar su información.
 		
@@ -38,6 +39,7 @@ public class Principal {
 		
 		System.out.print("Ingrese el saldo de la cuenta: ");
 		double saldo = leerTeclado.nextDouble();
+
 		
 		// traspasamos los datos a la billetera3 usando los setters
 		billetera3.setNumeroCuenta(numeroCuenta);
