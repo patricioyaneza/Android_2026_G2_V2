@@ -1,5 +1,5 @@
 
-public class Gato extends Animal {
+public class Gato extends Animal{
 	private boolean tieneVisionNoctura;
 
 	public Gato() {
@@ -31,6 +31,24 @@ public class Gato extends Animal {
 	{
 		System.out.println("Miau!!!");
 	}
-	
+
+	@Override
+	public boolean guardar() {
+		System.out.println("Datos del gatos guardados en la BDD");
+		return true;
+	}
+
+	@Override
+	public boolean eliminar() {
+		System.out.println("Datos eliminados de la BDD");
+		return true;
+	}
+
+	@Override
+	public boolean modificar() {
+		System.out.println("Datos del gato modificado");
+		return false;
+	}
+
 	
 }

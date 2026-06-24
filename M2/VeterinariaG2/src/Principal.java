@@ -34,10 +34,10 @@ public class Principal {
 		
 		// agregar mascotas a la coleccion (arraylist)
 		veterinaria.add(p1);
-		veterinaria.add(p2);
-		veterinaria.add(p3);
 		veterinaria.add(g1);
+		veterinaria.add(p2);
 		veterinaria.add(g2);
+		veterinaria.add(p3);
 		
 		// muestra la cantidad de elementos actual de la coleccion
 		System.out.println("cantidad de elementos: " + veterinaria.size() );
@@ -45,8 +45,9 @@ public class Principal {
 		// recorrer la colección
 		for(Animal aux: veterinaria)
 		{
-			System.out.println("Nombre de la mascota: " + aux.getNombre());
-
+			// System.out.println("Nombre de la mascota: " + aux.getNombre());
+			aux.emitirSonido();
+			aux.imprimir();
 		}
 		
 		

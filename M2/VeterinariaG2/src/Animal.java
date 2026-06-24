@@ -1,5 +1,5 @@
 
-public class Animal {
+public abstract class Animal implements Operaciones {
 	protected String nombre;
 	protected double peso;
 

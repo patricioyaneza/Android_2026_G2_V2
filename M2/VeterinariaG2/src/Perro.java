@@ -33,5 +33,23 @@ public class Perro extends Animal {
 	{
 		System.out.println("Guau!!!");
 	}
-	
+
+	@Override
+	public boolean guardar() {
+		System.out.println("Datos del perro guardados en la BDD");
+		return true;
+	}
+
+	@Override
+	public boolean eliminar() {
+		System.out.println("Datos eliminados de la BDD");
+		return true;
+	}
+
+	@Override
+	public boolean modificar() {
+		System.out.println("Datos del perro modificado");
+		return false;
+	}
+
 }
