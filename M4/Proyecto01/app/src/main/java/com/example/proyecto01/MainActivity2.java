@@ -81,6 +81,7 @@ public class MainActivity2 extends AppCompatActivity {
             txtNumero2.setText("");
             lblResultado.setText("");
         });
-
+        // Tarea 1: buscar las diferentes sintaxis de la sentencia if
+        // Tarea 2: Agregar al IDE, una IA (gemini u otra que se pueda agregar)
     }
 }
