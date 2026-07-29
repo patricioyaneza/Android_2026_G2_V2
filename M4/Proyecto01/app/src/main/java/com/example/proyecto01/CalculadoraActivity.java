@@ -8,10 +8,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class CalculadoraActivity extends AppCompatActivity {
 
     Button btnSumar;
     Button btnRestar;
@@ -75,6 +76,15 @@ public class MainActivity2 extends AppCompatActivity {
             int resultado = numero1 / numero2;
             txtNumero2.getWindowInsetsController().hide(WindowInsets.Type.ime()); // cierra el teclado
             lblResultado.setText("Resultado: " + resultado);
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Resultado")
+                    .setMessage("El resultado es: " + resultado)
+                    .setPositiveButton("Aceptar", null)
+                    //.setIcon(android.R.drawable.ic_dialog_info)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+
         });
         btnLimpiar.setOnClickListener(view -> {
             txtNumero1.setText("");
