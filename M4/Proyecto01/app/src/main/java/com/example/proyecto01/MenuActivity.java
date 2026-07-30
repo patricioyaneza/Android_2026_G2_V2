@@ -4,17 +4,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MenuActivity extends AppCompatActivity {
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+public class MenuActivity extends AppCompatActivity {
+    boolean open = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu);
+
+        FloatingActionButton fabPrincipal = findViewById(R.id.fabPrincipal);
+        FloatingActionButton fabCalculadora = findViewById(R.id.fabCalculadora);
+        FloatingActionButton fabOpcion1 = findViewById(R.id.fabOpcion1);
+
+        fabPrincipal.setOnClickListener(view -> {
+            if(open) {
+                fabCalculadora.setVisibility(View.GONE);
+                fabOpcion1.setVisibility(View.GONE);
+            }
+            else
+            {
+                fabCalculadora.setVisibility(View.VISIBLE);
+                fabOpcion1.setVisibility(View.VISIBLE);
+            }
+            open = !open;
+        });
     }
 
     @Override // muestra el menu creado
@@ -32,8 +52,7 @@ public class MenuActivity extends AppCompatActivity {
             return true;
         }
         if (id == R.id.item_logout) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
+            finishAffinity();
             return true;
         }
         return super.onOptionsItemSelected(item);
