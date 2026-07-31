@@ -35,6 +35,13 @@ public class MenuActivity extends AppCompatActivity {
             }
             open = !open;
         });
+
+        fabCalculadora.setOnClickListener(view -> {
+            Intent intent = new Intent(this, CalculadoraActivity.class);
+            startActivity(intent);
+        });
+         // Ejercicio 1: En la calculadora agregar un boton (imagen) que retorne al menu principal
+
     }
 
     @Override // muestra el menu creado

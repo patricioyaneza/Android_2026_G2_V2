@@ -9,11 +9,12 @@
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="380dp"
-        android:layout_height="640dp"
+        android:layout_width="194dp"
+        android:layout_height="635dp"
         android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent">
 
 
