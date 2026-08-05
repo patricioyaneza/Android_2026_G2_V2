@@ -1,0 +1,42 @@
+
+fun main() { // public static void main(String [] args) {
+    println("Hello, world!!!")
+    
+    val PI = 3.14169265 // constante  INMUTABLE
+    println("Valor de PI: " + PI)
+    
+    var numero = 0
+    numero = 10 + 30
+    // numero = 10.5 da error debido a que la variable es Int y no Double
+    println("El resultado es: " + numero)
+    
+    var nombre = "Juan"
+    
+    print("Su nombre es: " + nombre + "\n")
+    print("Hola")
+    
+	var edad = 18
+    
+    if(edad >= 18)
+    {
+        println(" Ud es mayor de edad.")
+    }
+    
+    
+    var anioNacimiento = 2000
+    if(anioNacimiento >= 1996)
+    {
+        println("Ud pertenece a la generación z")
+    }
+    else
+    {
+        println("Ud NO pertenece a la generación z")
+    }
+    
+    var nota = 10
+    var situacion = if(nota >= 40) "Aprobado" else "Reprobado"
+    println("El estado de curso es: " + situacion)
+    
+    
+    
+}
