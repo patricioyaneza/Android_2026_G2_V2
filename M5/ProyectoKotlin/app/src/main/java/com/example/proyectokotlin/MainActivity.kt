@@ -34,6 +34,7 @@ class MainActivity : ComponentActivity() {
             println(persona.nombre)
             persona.nombre = "Juan"
             println(persona.nombre)
+            println(persona.toString())
 
             val vehiculo = Vehiculo("ABC123", "Toyota", "Corolla", 2022)
             println(vehiculo)
