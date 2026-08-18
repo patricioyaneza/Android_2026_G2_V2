@@ -68,7 +68,7 @@ class MainActivity : ComponentActivity() {
         Log.d("Ciclo de Vida", "Contador: " + contador)
     }
 }
-
+// Ejercicio: Crear un proyecto nuevo "EjercicioKotlin02", agregar un Login y un pantalla de bienvenida.
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
