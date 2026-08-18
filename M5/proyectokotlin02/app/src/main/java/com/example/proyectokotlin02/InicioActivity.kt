@@ -1,6 +1,7 @@
 package com.example.proyectokotlin02
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,11 @@ class InicioActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val sp = getSharedPreferences("datosGuardados", MODE_PRIVATE)
+        val email = sp.getString("email", "")
+
+        val txtEmailUsuario = findViewById<TextView>(R.id.txtEmailUsuario)
+        txtEmailUsuario.text = email
     }
 }
