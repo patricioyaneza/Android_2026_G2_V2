@@ -17,7 +17,7 @@ class InicioActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+// rescatar valor
         val sp = getSharedPreferences("datosGuardados", MODE_PRIVATE)
         val email = sp.getString("email", "")
 

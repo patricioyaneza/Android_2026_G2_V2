@@ -34,21 +34,15 @@ class LoginActivity : AppCompatActivity() {
                 txtEmail.requestFocus()
                 return@setOnClickListener
             }
-            // Guardar email en SharedPreferences
+            // Guardar datos en SharedPreferences
             var sp = getSharedPreferences("datosGuardados", MODE_PRIVATE)
             var editor = sp.edit()
             editor.putString("email", email).apply()
             editor.putInt("edad", 35).apply()
-
-
-
-//            Toast.makeText(this, "Email: $email Clave: $clave", Toast.LENGTH_SHORT).show()
+            editor.putBoolean("habilitado", true).apply()
             var intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)
-
         }
 
     }
-
-
 }

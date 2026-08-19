@@ -2,4 +2,4 @@
 
 2.- en un actividad ya creada, en la palette, seleccionar FragmentContainerView y esperar la descarga de la dependencia (librería)
 
-3.-agregar FragmentContainerView a la acivity y seleccionar el fragment creado
+3.-agregar FragmentContainerView a la activity y seleccionar el fragment creado
