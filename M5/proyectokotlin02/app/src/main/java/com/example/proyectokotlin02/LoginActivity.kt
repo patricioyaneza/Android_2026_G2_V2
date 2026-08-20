@@ -43,6 +43,12 @@ class LoginActivity : AppCompatActivity() {
             var intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)
         }
+        /*
+        Actividad 1:
+        - Crear un proyecto "proyectoCicloVidaFragment" Kotlin
+        - Crear un activity
+        - Crear un Fragment
+         */
 
     }
 }
