@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MVC G2</string>
+    <string name="login">Autenticación</string>
+    <string name="email">Correo</string>
+    <string name="password">Clave</string>
+    <string name="accept">Aceptar</string>
+    <string name="clean">Limpiar</string>
+
+</resources>

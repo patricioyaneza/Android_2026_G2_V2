@@ -34,7 +34,7 @@ class BlankFragment : Fragment() {
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+        super.onActivityCreated(savedInstanceState) // deprecated
         Log.d("Fragment", "onActivityCreated")
         contador++
     }
