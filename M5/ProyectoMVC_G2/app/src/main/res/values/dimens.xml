@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titulo1" unit="sp">34dp</dimen>
+    <dimen name="subtitulo1" unit="sp">24dp</dimen>
+    <dimen name="texto" unit="sp">10dp</dimen>
+
+    <dimen name="btn_width" unit="sp">120dp</dimen>
+    <dimen name="btn_height" unit="sp">50dp</dimen>
+</resources>
