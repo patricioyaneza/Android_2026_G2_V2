@@ -19,7 +19,7 @@ class UsuarioController {
         return usuarioModel.correo
     }
 
-    fun imprimir(): String{
+    fun imprimir(): String {
         return usuarioModel.imprimirDatos()
     }
 

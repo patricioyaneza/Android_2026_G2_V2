@@ -20,4 +20,5 @@ class UsuarioModel {
     fun imprimirDatos(): String{
         return "Rut: $rut Nombre: $nombre Correo: $correo Edad: $edad"
     }
+
 }

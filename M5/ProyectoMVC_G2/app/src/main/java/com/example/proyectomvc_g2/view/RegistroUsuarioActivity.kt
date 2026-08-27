@@ -85,6 +85,10 @@ class RegistroUsuarioActivity : AppCompatActivity() {
 
     PPT M5 AE3: Ejercicio de donaciones.
 
+M: model
+V: view
+C: controller
+
  */
     }
 
