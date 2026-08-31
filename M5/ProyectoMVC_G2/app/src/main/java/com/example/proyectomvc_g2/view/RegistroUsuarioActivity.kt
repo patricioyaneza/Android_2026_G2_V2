@@ -74,11 +74,11 @@ class RegistroUsuarioActivity : AppCompatActivity() {
             txtCorreo.setText("")
             txtEdad.setText("")
             txtRut.requestFocus()
-            Toast.makeText(this, "Usuario Guardado", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.save, Toast.LENGTH_SHORT).show()
             println(usuarioController.imprimir())
         }
         else
-            Toast.makeText(this, "Error al guardar usuario", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.error_save, Toast.LENGTH_SHORT).show()
 /*
     Ejercicio: Definir los mensajes de texto en values string para que sirve en todos
     los idiomas configurados (es, en y fr)

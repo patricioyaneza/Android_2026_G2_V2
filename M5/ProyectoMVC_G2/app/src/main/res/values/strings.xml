@@ -5,5 +5,7 @@
     <string name="password">Clave</string>
     <string name="accept">Aceptar</string>
     <string name="clean">Limpiar</string>
+    <string name="save">Registro Guardado</string>
+    <string name="error_save">Error al registrar</string>
 
 </resources>

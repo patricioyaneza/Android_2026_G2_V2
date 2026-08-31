@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MVC G2</string>
-    <string name="login">fasdfas</string>
-    <string name="email">asdfas</string>
-    <string name="password">asdfasd</string>
-    <string name="accept">asdfasd</string>
-    <string name="clean">asdfas</string>
+    <string name="login">Authentification</string>
+    <string name="email">E-mail</string>
+    <string name="password">indice</string>
+    <string name="accept">accepter</string>
+    <string name="clean">ménage</string>
+    <string name="save">Enregistrement enregistré</string>
+    <string name="error_save">Erreur d\'enregistrement</string>
 </resources>
