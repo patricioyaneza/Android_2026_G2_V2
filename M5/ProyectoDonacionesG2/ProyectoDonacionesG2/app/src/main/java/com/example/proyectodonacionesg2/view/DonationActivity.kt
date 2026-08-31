@@ -6,19 +6,19 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectodonacionesg2.controller.DonationController
-import com.example.proyectodonacionesg2.databinding.ActivityMainBinding
+import com.example.proyectodonacionesg2.databinding.ActivityDonationBinding
 import com.example.proyectodonacionesg2.model.Donacion
 
-class MainActivity : AppCompatActivity() {
+class DonationActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding // importar la clase de enlace de vista
+    private lateinit var binding: ActivityDonationBinding // importar la clase de enlace de vista
     private val controller = DonationController()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityDonationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.txtNuevaDonacion.requestFocus()
@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnIr.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
         }
+        binding.btnEnviarDato.setOnClickListener {
+            var intent = Intent(this, MainActivity2::class.java)
+            intent.putExtra("dato", controller.totalDonation())
+            startActivity(intent)
+        }
+
     }
 
     fun hacerDonacion() {
