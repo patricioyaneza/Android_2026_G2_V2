@@ -25,6 +25,13 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, DonationActivity::class.java))
         }
 
+        binding.btnLista1.setOnClickListener {
+            startActivity(Intent(this, Lista1Activity::class.java))
+        }
+
+        binding.btnLista2.setOnClickListener {
+            startActivity(Intent(this, Lista2Activity::class.java))
+        }
 
     }
 }
