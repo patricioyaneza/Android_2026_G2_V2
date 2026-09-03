@@ -33,5 +33,8 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, Lista2Activity::class.java))
         }
 
+        binding.btnLista3.setOnClickListener {
+            startActivity(Intent(this, Lista3Activity::class.java))
+        }
     }
 }

@@ -33,7 +33,7 @@ class DonationActivity : AppCompatActivity() {
         }
         binding.btnEnviarDato.setOnClickListener {
             var intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("dato", controller.totalDonation())
+            intent.putExtra("dato", 1500)
             startActivity(intent)
         }
 
