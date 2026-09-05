@@ -23,7 +23,6 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnAumentar.setOnClickListener {
-
             //Thread.sleep(3000)
             binding.txtContador.text = (++contador).toString()
         }
