@@ -2,8 +2,6 @@ Ejercicio:
 
 Crear un menú con el registro datos y visualización de datos.
 
-
-
 1.- Activity 1 que permita guardar y/o modificar si existen:
 
 Nombre
