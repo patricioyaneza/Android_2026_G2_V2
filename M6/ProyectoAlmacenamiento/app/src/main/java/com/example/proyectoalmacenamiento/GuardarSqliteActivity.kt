@@ -1,20 +1,53 @@
 package com.example.proyectoalmacenamiento
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
+import com.example.proyectoalmacenamiento.data.AppDataBase
+import com.example.proyectoalmacenamiento.databinding.ActivityGuardarSqliteBinding
+import com.example.proyectoalmacenamiento.model.UsuarioModel
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
+
 
 class GuardarSqliteActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityGuardarSqliteBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_guardar_sqlite)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        binding = ActivityGuardarSqliteBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnAceptar.setOnClickListener {
+            val nombre = binding.txtNombre.getText().toString()
+            val apellido = binding.txtApellido.getText().toString()
+            val email = binding.txtEmail.getText().toString()
+            val celular = binding.txtCelular.getText().toString()
+            val sucursal = binding.txtSucursal.getText().toString()
+
+            // se debe validar que los campos no esten vacios entre otras validaciones
+
+            lifecycleScope.launch {
+                val usuario = UsuarioModel(
+                    nombre = nombre,
+                    apellido = apellido,
+                    email = email,
+                    celular = celular,
+                    sucursal = sucursal
+                )
+                AppDataBase.getInstance(this@GuardarSqliteActivity).usuarioDao().insert(usuario)
+                Toast.makeText(this@GuardarSqliteActivity, "Datos guardados", Toast.LENGTH_SHORT).show()
+
+                binding.txtNombre.setText("")
+                binding.txtApellido.setText("")
+                binding.txtEmail.setText("")
+                binding.txtCelular.setText("")
+                binding.txtSucursal.setText("")
+                binding.txtNombre.requestFocus()
+            }
         }
+
     }
 }
