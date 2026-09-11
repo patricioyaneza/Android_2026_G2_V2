@@ -165,3 +165,10 @@ Ruta exacta: /data/data/TU_NOMBRE_DE_PAQUETE/databases/nombre_base_datos
 10.- ruta para acceder al inspector de aplicaciones desde el menú 
 view -> tool Windows --> App inspection
 
+
+
+
+                
+Ejercicio: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
+(1 layout -> linear layout horizontal y 3 textView)
+                 

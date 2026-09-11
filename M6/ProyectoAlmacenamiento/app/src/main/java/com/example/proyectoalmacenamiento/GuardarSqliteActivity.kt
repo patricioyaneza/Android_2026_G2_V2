@@ -46,6 +46,18 @@ class GuardarSqliteActivity : AppCompatActivity() {
                 binding.txtCelular.setText("")
                 binding.txtSucursal.setText("")
                 binding.txtNombre.requestFocus()
+
+                println("Datos de usuarios")
+                val usuarios = AppDataBase.getInstance(this@GuardarSqliteActivity).usuarioDao().getAll()
+
+                for (usuario in usuarios) {
+                    println("Nombre de usuario ${usuario.nombre}")
+                }
+/*
+Ejercicio: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
+(1 layout -> linear layout horizontal y 3 textView)
+ */
+
             }
         }
 
