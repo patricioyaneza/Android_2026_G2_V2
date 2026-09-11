@@ -54,7 +54,7 @@ class GuardarSqliteActivity : AppCompatActivity() {
                     println("Nombre de usuario ${usuario.nombre}")
                 }
 /*
-Ejercicio: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
+Ejercicio / tarea: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
 (1 layout -> linear layout horizontal y 3 textView)
  */
 
