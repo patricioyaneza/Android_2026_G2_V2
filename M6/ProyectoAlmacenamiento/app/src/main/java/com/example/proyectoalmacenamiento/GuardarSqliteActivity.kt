@@ -1,6 +1,7 @@
 package com.example.proyectoalmacenamiento
 
 import android.os.Bundle
+import android.widget.SimpleAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -53,13 +54,33 @@ class GuardarSqliteActivity : AppCompatActivity() {
                 for (usuario in usuarios) {
                     println("Nombre de usuario ${usuario.nombre}")
                 }
-/*
-Ejercicio / tarea: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
-(1 layout -> linear layout horizontal y 3 textView)
- */
+
 
             }
         }
-
+        /*
+        Ejercicio / tarea: En un listView, mostrar nombre, apellido y sucursal de cada usuario.
+        (1 layout -> linear layout horizontal y 3 textView)
+         */
+        binding.btnListar.setOnClickListener {
+            lifecycleScope.launch {
+                val usuarios = AppDataBase.getInstance(this@GuardarSqliteActivity).usuarioDao().getAll()
+                val usuariosMap = usuarios.map { usuario ->
+                    mapOf(
+                        "nombre" to usuario.nombre,
+                        "apellido" to usuario.apellido,
+                        "email" to usuario.email
+                    )
+                }
+                val adaptadorLista = SimpleAdapter(
+                    this@GuardarSqliteActivity,
+                    usuariosMap,
+                    R.layout.filausuario,
+                    arrayOf("nombre", "apellido", "email"),
+                    intArrayOf(R.id.txtNombreFila, R.id.txtApellidoFila, R.id.txtEmailFila)
+                )
+                binding.listaUsuarios.adapter = adaptadorLista
+            }
+        }
     }
 }
