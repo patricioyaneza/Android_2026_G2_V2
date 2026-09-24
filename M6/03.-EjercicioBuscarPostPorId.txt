@@ -1,0 +1,1 @@
+Ejercicio: crear un activity para que el usuario pueda ver los post realizados por un usuario, para esto, se debe especificar el id del usuario a buscar y mostrar todos los post asociados a él.
