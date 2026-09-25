@@ -3,7 +3,7 @@ package com.example.proyectoapirest.data.network
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitCliente {
+object JsonPlaceHolderClient {
 
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
