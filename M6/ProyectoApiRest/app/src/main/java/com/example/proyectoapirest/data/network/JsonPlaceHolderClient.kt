@@ -4,7 +4,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object JsonPlaceHolderClient {
-
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
     val instancia : PostApi by lazy {
@@ -14,5 +13,4 @@ object JsonPlaceHolderClient {
             .build()
             .create(PostApi::class.java)
     }
-
 }
